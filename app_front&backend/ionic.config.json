@@ -1,0 +1,8 @@
+{
+  "name": "vip_shopping",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
