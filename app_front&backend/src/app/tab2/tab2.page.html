@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Scan Barcode
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-button expand="full" (click)="scanCode()" color="secondary">
+      Scan Code
+  </ion-button>
+
+  <!-- change to *ngIf="scannedCode" real || *ngIf="itemDetails.item_id"  testing-->
+
+  <ion-card *ngIf="scannedCode">  
+    <ion-card-content>
+      Result from Scan: {{scannedCode}} <br>
+      Item: {{itemDetails.color}} {{itemDetails.material}} {{itemDetails.category}} <br>
+      Size: {{itemDetails.size}} <br>
+      Price: {{itemDetails.price}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
